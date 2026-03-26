@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# nxc-omni.sh V5 - OSCP NetExec Ultimate Automator
+# nxc-auto.sh V5 - OSCP NetExec Ultimate Automator
 # Protocols: SMB, LDAP, WinRM, RDP, MSSQL, SSH, FTP, WMI, NFS, VNC
 # Usage:
-#   No Auth:       ./nxc-omni.sh -t <target>
-#   Single Cred:   ./nxc-omni.sh -t <target> -u <user> -p <pass>
-#   Hash PTH:      ./nxc-omni.sh -t <target> -u <user> -H <hash>
-#   File Spray:    ./nxc-omni.sh -t <target> -U users.txt -P pass.txt [-c]
+#   No Auth:       ./nxc-auto.sh -t <target>
+#   Single Cred:   ./nxc-auto.sh -t <target> -u <user> -p <pass>
+#   Hash PTH:      ./nxc-auto.sh -t <target> -u <user> -H <hash>
+#   File Spray:    ./nxc-auto.sh -t <target> -U users.txt -P pass.txt [-c]
 #   Continue:      add -c or --continue-on-success
 
 TARGET=""
@@ -73,7 +73,7 @@ run() {
 }
 
 echo -e "\n======================================================="
-echo -e "   OSCP NXC OMNI-ENUMERATOR V5 — $(date)"
+echo -e "   OSCP NXC Auto-ENUMERATOR V5 — $(date)"
 echo -e "   Output: ./$OUTDIR/"
 echo -e "=======================================================\n"
 [ -n "$CONTINUE_FLAG" ] && echo -e "[+] --continue-on-success: ENABLED\n"
